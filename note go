@@ -1,0 +1,23 @@
+*Nếu nhập nhiều biến trên cùng 1 dòng: dùng fmt.Scan
+*Nếu nhập 1 biến mỗi dòng: dùng fmt.Scanln 
+
+*Dùng Println khi chỉ muốn in đơn giản và tự động xuống dòng.
+*Dùng Printf khi muốn định dạng rõ ràng kết quả.
+              Ví dụ:
+              // In đơn giản:
+              fmt.Println("Kết quả:", a+b)
+              
+              // In có định dạng:
+              fmt.Printf("Tổng của %d và %d là %d\n", a, b, a+b)
+fmt.Print()
+In các tham số liền nhau, không xuống dòng.
+              Ví dụ:
+              fmt.Print("Hello ")
+              fmt.Print("World")
+              Output: Hello World
+| Hàm       | Mục đích                     | Xuống dòng?               | Dùng khi nào?                         |
+| --------- | ---------------------------- | ------------------------- | ------------------------------------- |
+| `Print`   | In liền, không xuống dòng    | Không                     | In liên tục trên cùng dòng            |
+| `Println` | In cách nhau, rồi xuống dòng | Có                        | In từng dòng hoặc kết thúc dòng       |
+| `Printf`  | In có định dạng (format)     | Không (phải tự thêm `\n`) | In dữ liệu có kiểu rõ ràng, định dạng |
+
